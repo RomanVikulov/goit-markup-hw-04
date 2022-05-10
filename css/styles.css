@@ -388,6 +388,20 @@ button {
   background-position: center;
 }
 
+.team-icon-link:hover,
+.team-icon-link:focus {
+  background-color: var(--accent-color);
+}
+
+.team-icon-link:hover .team-icon-svg,
+.team-icon-link:hover .team-icon-svg {
+  fill: var(--fon-color)
+}
+
+.team-icon-svg:hover,
+.team-icon-svg:focus {
+  fill: var(--icon-color);
+}
 
 /* Постоянные клиенты */
 
