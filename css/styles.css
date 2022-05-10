@@ -101,7 +101,7 @@ button {
   display: flex;
 }
 
-.nav .nav-item + .nav-item {
+.nav .nav-item+.nav-item {
   margin-left: 50px;
 }
 
@@ -129,7 +129,7 @@ button {
   margin-left: auto;
 }
 
-.header-list .header-item + .header-item {
+.header-list .header-item+.header-item {
   margin-left: 50px;
 }
 
@@ -163,8 +163,10 @@ button {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-
-  background: var(--back-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: var(--back-color);
   text-align: center;
 }
 
@@ -210,6 +212,17 @@ button {
 
 .feature-item {
   width: 270px;
+}
+
+.feature-link {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: #F5F4FA;
+  border-radius: 4%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .feature-item:not(:last-child) {
