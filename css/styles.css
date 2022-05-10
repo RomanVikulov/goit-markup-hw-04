@@ -129,6 +129,12 @@ button {
 .header-list {
   display: flex;
   margin-left: auto;
+
+}
+
+.header-icons {
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .header-list .header-item+.header-item {
@@ -137,6 +143,8 @@ button {
 
 .header-link-mail,
 .header-link-tel {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -145,8 +153,25 @@ button {
   color: var(--secondary-color);
 }
 
+.header-link-tel:hover .header-icons,
+.header-link-tel:focus .header-icons {
+  fill: var(--accent-color);
+}
+
+.header-link-mail:hover .header-icons,
+.header-link-mail:focus .header-icons {
+  fill: var(--accent-color);
+}
+
+
+
 .nav-link:hover,
 .nav-link:focus {
+  color: var(--accent-color);
+}
+
+.header-link-mail:hover .header-icons,
+.header-link-mail:focus .header-icons {
   color: var(--accent-color);
 }
 
