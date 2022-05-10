@@ -14,6 +14,13 @@
   --back-color: #2f303a;
   --icon-color-bg: #44454E;
   --icon-color: #AFB1B8;
+  --box-shadow-color: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  --box-shadow-sec-color: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  --box-shadow-carts: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 body {
@@ -582,12 +589,14 @@ button {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   padding: 6px 22px;
+  border-radius: 4px;
 }
 
 .button-btn:hover,
 .button-btn:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--fon-color);
+  box-shadow: var(--box-shadow-color);
 }
 
 /* Список проектов */
@@ -623,6 +632,7 @@ button {
 .project-container {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
+  text-decoration: none;
 }
 
 .project-container:nth-child(-n + 6) {
@@ -631,4 +641,16 @@ button {
 
 .project-container:nth-child(3n) {
   margin-right: 0px;
+}
+
+.project-link {
+  display: block;
+  font-style: normal;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.project-link:hover,
+.project-link:focus {
+  box-shadow: var(--box-shadow-carts);
 }
