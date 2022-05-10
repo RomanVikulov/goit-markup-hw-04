@@ -411,7 +411,6 @@ button {
   list-style-type: none;
 }
 
-
 .clients-link {
   display: flex;
   width: 170px;
@@ -429,6 +428,22 @@ button {
 
 .clients-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--accent-color);
+  background-color: var(--fon-color);
+  fill: var(--accent-color);
+}
+
+.clients-icon {
+  fill: var(--icon-color)
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--accent-color);
 }
 
 /* Подвал */
