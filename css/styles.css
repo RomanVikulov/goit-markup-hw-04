@@ -394,12 +394,11 @@ button {
 }
 
 .team-icon-link:hover .team-icon-svg,
-.team-icon-link:hover .team-icon-svg {
-  fill: var(--fon-color)
+.team-icon-link:focus .team-icon-svg {
+  fill: var(--fon-color);
 }
 
-.team-icon-svg:hover,
-.team-icon-svg:focus {
+.team-icon-svg {
   fill: var(--icon-color);
 }
 
