@@ -336,6 +336,8 @@ button {
 
 .team-block {
   padding-top: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .team-item:not(:last-child) {
@@ -375,7 +377,7 @@ button {
 .team-icon-list {
   list-style-type: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding-bottom: 30px;
 }
 
