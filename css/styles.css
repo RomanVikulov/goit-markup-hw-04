@@ -336,7 +336,6 @@ button {
 
 .team-block {
   padding-top: 30px;
-
 }
 
 .team-item:not(:last-child) {
@@ -363,14 +362,9 @@ button {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-
+  margin-bottom: 16px;
   color: var(--secondary-color);
 }
-
-.team-icon {
-  padding: 16px 32px 30px 32px;
-}
-
 
 .team-icon-svg {
   width: 20px;
@@ -381,7 +375,8 @@ button {
 .team-icon-list {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  padding-bottom: 30px;
 }
 
 .team-icon-link {
@@ -439,7 +434,6 @@ button {
   border-radius: 5px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 94px;
   border: 1px solid #AFB1B8;
 }
 
@@ -490,7 +484,6 @@ button {
 
 .address {
   font-style: normal;
-  margin-right: 70px;
 }
 
 .footer-address {
@@ -514,6 +507,7 @@ button {
 
 .footer-icon {
   display: flex;
+  align-items: baseline;
 }
 
 .networks-block {
