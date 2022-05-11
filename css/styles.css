@@ -142,6 +142,7 @@ button {
 .header-icons {
   display: inline-block;
   margin-right: 10px;
+  fill: var(--secondary-color);
 }
 
 .header-list .header-item+.header-item {
